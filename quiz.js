@@ -26,6 +26,14 @@ answer: 'Lainie Jensen',}, {
     var curr = questions[i];
     play(curr.question,curr.answer);
   }
+  var scores = [{ name: "Himanshu Shukla",
+  scoreIs: 6,},{ name: "Abhinav",
+  scoreIs: 5,}]
+  for(var i=0;i<scores.length;i++){
+    if(score > scores[i].scoreIs){
+     console.log(chalk.red("Hey it Looks like you have done very well and your score can be in the list of High Scores. Send me a SS. I will update it."))
+    }
+  }
   console.log('your score is '+ score);
   console.log('Highest Score --> Himanshu shukla = 6')
   console.log('Second Highest Score - to be announced soon')
